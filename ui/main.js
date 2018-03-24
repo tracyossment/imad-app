@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/*console.log('Loaded!');
 var element= document.getElementById('main text');
 element.innerHTML='New Value';
 
@@ -13,12 +13,13 @@ img.onclick=function(){
    var interval = setInterval(mover,'1000');
    
 }
-
+*/
 var button =document.getElementById('counter');
 var counter= 0;
 button.onClick= function(){
+       counter=counter+1;
     var span=document.getElementById('count');
-    counter=counter+1;
+ 
     span.innerHTML=counter.toString();
     
     
