@@ -6,7 +6,7 @@ element.innerHTML='New Value';
 var img= document.getElementById('madi');
 var l=0;
 function mover(){
-    l=l+'10';
+    l=l+'5';
      img.style.marginLeft=l+'px';
 }
 img.onclick=function(){
