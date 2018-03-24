@@ -14,3 +14,12 @@ img.onclick=function(){
    
 }
 
+var button =getElementbyId('counter');
+var counter= 0;
+button.onClick= function(){
+    var span=getElementbyId('count');
+    counter=counter+1;
+    span.innerHTML=counter.toString();
+    
+    
+}
