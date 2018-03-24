@@ -14,16 +14,16 @@ img.onclick=function(){
    
 }
 */
-var button =document.getElementById('counter');
+var button = document.getElementById('counter');
 
     console.log('not clicked');
 var counter= 0;
 button.onclick= function () {
     console.log('clicked');
-       counter=counter+1;
-    var span=document.getElementById('count');
+    counter = counter+1;
+    var span = document.getElementById('count');
  
-    span.innerHTML=counter.toString();
+    span.innerHTML = counter.toString();
     
     
 };
