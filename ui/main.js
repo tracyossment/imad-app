@@ -14,15 +14,34 @@ img.onclick=function(){
    
 }
 */
+var request = XMLHttpRequest();
+request.onreadystatechange=function(){
+    if(reuest.readyState===XMLHttpRequest.DONE){
+        if(request.status===200){
+            
+          var counter=  request.responseText;
+          var span = document.getElementById('count');
+          span.innerHTML = counter.toString();
+            
+        }
+    }
+};
 
-console.log('not clicked');
+request.open('GET', 'http://triparnabbain.imad.hasura-app.io/counter',true);
+request.send(null);
+
+/*console.log('not clicked');
 var counter= 0;
 //var button = document.getElementById('counter');
 window.onload = function(){
-document.getElementById('counter').onclick = function() {
+    document.getElementById('counter').onclick = function() {
+    
 console.log('clicked');
 counter = counter+1;
-var span = document.getElementById('count');
-span.innerHTML = counter.toString();
+ var span = document.getElementById('count');
+     span.innerHTML = counter.toString();
+            
 };
-};
+
+};*/
+
