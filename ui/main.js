@@ -10,7 +10,7 @@ function mover(){
      img.style.marginLeft=l+'px';
 }
 img.onclick=function(){
-   var interval = setInterval(mover,'10');
+   var interval = setInterval(mover,'1000');
    
 }
 
