@@ -14,9 +14,10 @@ img.onclick=function(){
    
 }
 */
-var button = document.getElementById('counter');
+
 console.log('not clicked');
 var counter= 0;
+var button = document.getElementById('counter');
 button.onclick = function() {
 console.log('clicked');
 counter = counter+1;
