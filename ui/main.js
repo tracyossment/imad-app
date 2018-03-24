@@ -17,8 +17,8 @@ img.onclick=function(){
 
 console.log('not clicked');
 var counter= 0;
-var button = document.getElementById('counter');
-button.onclick = function() {
+//var button = document.getElementById('counter');
+document.getElementById('counter').onclick = function() {
 console.log('clicked');
 counter = counter+1;
 var span = document.getElementById('count');
